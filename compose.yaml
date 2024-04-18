@@ -12,10 +12,10 @@ services:
     image: postgres
     container_name: postgres_compose_challenge
     environment:
-      POSTGRES_PASSWORD: supersecurepassword
       POSTGRES_USER: challenge_user
+      POSTGRES_PASSWORD: supersecurepassword
     ports:
-      - "5432:5432"
+      - "6000:5432"
     volumes:
       - /c/Docker/DB:/var/lib/postgresql/data
     restart: unless-stopped
